@@ -89,3 +89,4 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
 
 <div id="releases-list"></div>
 
+<link rel="icon" type="image/x-icon" href="https://github.com/JesseHoekema/DesktopFloppa/blob/main/favicon.png?raw=true">
