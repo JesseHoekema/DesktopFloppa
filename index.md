@@ -20,6 +20,7 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
   font-size: 20px; cursor: not-allowed;" disabled><i class="fa fa-download"></i> Download For Windows</button>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<img src="https://raw.githubusercontent.com/JesseHoekema/DesktopFloppa/refs/heads/main/example.gif" alt="Cute Cat" style="width: 500px; height: auto;">
 
 ### Latest Release
 <script>
