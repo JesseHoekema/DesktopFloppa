@@ -25,34 +25,32 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
-        const releasesList = document.getElementById('latest-release');
-        data.forEach(release => {
-          const releaseItem = document.createElement('div');
-          releaseItem.classList.add('release-item');
-          
-          const releaseTitle = document.createElement('h3');
-          releaseTitle.textContent = release.name;
-          
-          const releaseDesc = document.createElement('p');
-          releaseDesc.textContent = release.body || 'No description available';
+        const releaseContainer = document.getElementById('latest-release');
+        
+        const releaseTitle = document.createElement('h3');
+        releaseTitle.textContent = data.name;
+        
+        const releaseDesc = document.createElement('p');
+        releaseDesc.textContent = data.body || 'No description available';
 
-          const releaseLink = document.createElement('a');
-          releaseLink.href = release.html_url;
-          releaseLink.textContent = 'View Release';
-          releaseLink.target = '_blank';
+        const releaseLink = document.createElement('a');
+        releaseLink.href = data.html_url;
+        releaseLink.textContent = 'View Release';
+        releaseLink.target = '_blank';
 
-          releaseItem.appendChild(releaseTitle);
-          releaseItem.appendChild(releaseDesc);
-          releaseItem.appendChild(releaseLink);
-
-          releasesList.appendChild(releaseItem);
-        });
+        // Append the release information to the page
+        releaseContainer.appendChild(releaseTitle);
+        releaseContainer.appendChild(releaseDesc);
+        releaseContainer.appendChild(releaseLink);
       })
-      .catch(error => console.error('Error fetching releases:', error));
+      .catch(error => console.error('Error fetching latest release:', error));
   });
 </script>
 
-<div id="latest-release"></div>
+<div id="latest-release">
+  <!-- Latest release info will be inserted here -->
+</div>
+
 
 
 ### Release History
