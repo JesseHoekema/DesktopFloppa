@@ -1,4 +1,4 @@
-![Alt text](https://github.com/JesseHoekema/DesktopFloppa/blob/main/favicon.png?raw=true){: .responsive-img }
+<img src="https://github.com/JesseHoekema/DesktopFloppa/blob/main/favicon.png?raw=true" alt="Cute Cat" style="width: 100px; height: auto;">
 .responsive-img {
   width: 100px;
   height: auto; /* Zorg ervoor dat de verhoudingen behouden blijven */
