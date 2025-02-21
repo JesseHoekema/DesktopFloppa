@@ -18,6 +18,37 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+### Latest Release
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const apiUrl = 'https://api.github.com/repos/yourusername/your-repo/releases/latest';  // Replace with your repo
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const releaseContainer = document.getElementById('latest-release');
+        
+        const releaseTitle = document.createElement('h3');
+        releaseTitle.textContent = data.name;
+        
+        const releaseDesc = document.createElement('p');
+        releaseDesc.textContent = data.body || 'No description available';
+
+        const releaseLink = document.createElement('a');
+        releaseLink.href = data.html_url;
+        releaseLink.textContent = 'View Release';
+        releaseLink.target = '_blank';
+
+        releaseContainer.appendChild(releaseTitle);
+        releaseContainer.appendChild(releaseDesc);
+        releaseContainer.appendChild(releaseLink);
+      })
+      .catch(error => console.error('Error fetching latest release:', error));
+  });
+</script>
+
+<div id="latest-release"></div>
+
+
 ### Release History
 <script>
   document.addEventListener('DOMContentLoaded', function() {
