@@ -17,3 +17,7 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
   font-size: 20px; cursor: not-allowed;" disabled><i class="fa fa-download"></i> Download For Windows</button>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% for post in site.posts limit:3 %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
