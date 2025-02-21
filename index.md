@@ -10,9 +10,7 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;"><i class="fa fa-download"></i> Download For Mac</button>
-</a>
-
-  <button class="btn" style="  background-color: DodgerBlue;
+</a><button class="btn" style="  background-color: DodgerBlue;
   border: none;
   color: white;
   padding: 12px 30px;
