@@ -21,7 +21,7 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
 ### Latest Release
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'https://api.github.com/repos/yourusername/your-repo/releases/latest';  // Replace with your repo
+    const apiUrl = 'https://api.github.com/repos/JesseHoekema/DesktopFloppa/releases/latest';  // Replace with your repo
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
