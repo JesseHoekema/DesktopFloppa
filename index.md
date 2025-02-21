@@ -25,24 +25,30 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
-        const releaseContainer = document.getElementById('latest-release');
-        
-        const releaseTitle = document.createElement('h3');
-        releaseTitle.textContent = data.name;
-        
-        const releaseDesc = document.createElement('p');
-        releaseDesc.textContent = data.body || 'No description available';
+        const releasesList = document.getElementById('latest-release');
+        data.forEach(release => {
+          const releaseItem = document.createElement('div');
+          releaseItem.classList.add('release-item');
+          
+          const releaseTitle = document.createElement('h3');
+          releaseTitle.textContent = release.name;
+          
+          const releaseDesc = document.createElement('p');
+          releaseDesc.textContent = release.body || 'No description available';
 
-        const releaseLink = document.createElement('a');
-        releaseLink.href = data.html_url;
-        releaseLink.textContent = 'View Release';
-        releaseLink.target = '_blank';
+          const releaseLink = document.createElement('a');
+          releaseLink.href = release.html_url;
+          releaseLink.textContent = 'View Release';
+          releaseLink.target = '_blank';
 
-        releaseContainer.appendChild(releaseTitle);
-        releaseContainer.appendChild(releaseDesc);
-        releaseContainer.appendChild(releaseLink);
+          releaseItem.appendChild(releaseTitle);
+          releaseItem.appendChild(releaseDesc);
+          releaseItem.appendChild(releaseLink);
+
+          releasesList.appendChild(releaseItem);
+        });
       })
-      .catch(error => console.error('Error fetching latest release:', error));
+      .catch(error => console.error('Error fetching releases:', error));
   });
 </script>
 
