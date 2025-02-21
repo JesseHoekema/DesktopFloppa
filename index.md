@@ -1,4 +1,8 @@
-![Alt text](https://github.com/JesseHoekema/DesktopFloppa/blob/main/favicon.png?raw=true)
+![Alt text](https://github.com/JesseHoekema/DesktopFloppa/blob/main/favicon.png?raw=true){: .responsive-img }
+.responsive-img {
+  width: 100px;
+  height: auto; /* Zorg ervoor dat de verhoudingen behouden blijven */
+}
 Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But Now Its A Floppa! Click For Money And Let Him Explore Your Whole Computer :)
 
 <a href="https://i.jessehoekema.com/dfi" style="color: white; text-decoration: none;">
