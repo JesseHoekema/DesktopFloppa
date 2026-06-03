@@ -1,5 +1,4 @@
-<img src="https://github.com/JesseHoekema/DesktopFloppa/blob/main/favicon.png?raw=true" alt="Cute Cat" style="width: 100px; height: auto;">
-
+<img src="https://github.com/JesseHoekema/DesktopFloppa/blob/main/docs/favicon.png?raw=true" alt="Cute Cat" style="width: 100px; height: auto;">
 
 Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But Now Its A Floppa! Click For Money And Let Him Explore Your Whole Computer :)
 
@@ -18,9 +17,10 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
   font-size: 20px; cursor: not-allowed; opacity: 0.7;" disabled><i class="fa fa-download"></i> Download For Windows</button>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<img src="https://raw.githubusercontent.com/JesseHoekema/DesktopFloppa/refs/heads/main/example.gif" alt="Cute Cat" style="width: 500px; height: auto;">
+<img src="https://raw.githubusercontent.com/JesseHoekema/DesktopFloppa/refs/heads/main/docs/example.gif" alt="Cute Cat" style="width: 500px; height: auto;">
 
 ### Latest Release
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const apiUrl = 'https://api.github.com/repos/JesseHoekema/DesktopFloppa/releases/latest';  // Replace with your repo
@@ -53,9 +53,8 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
   <!-- Latest release info will be inserted here -->
 </div>
 
-
-
 ### Release History
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const apiUrl = 'https://api.github.com/repos/JesseHoekema/DesktopFloppa/releases';  // Replace with your repo
@@ -91,4 +90,4 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
 
 <div id="releases-list"></div>
 
-<link rel="icon" type="image/x-icon" href="https://github.com/JesseHoekema/DesktopFloppa/blob/main/favicon.png?raw=true">
+<link rel="icon" type="image/x-icon" href="https://github.com/JesseHoekema/DesktopFloppa/blob/main/docs/favicon.png?raw=true">
