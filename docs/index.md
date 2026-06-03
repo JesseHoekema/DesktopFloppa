@@ -23,7 +23,7 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'https://api.github.com/repos/JesseHoekema/DesktopFloppa/releases/latest';  // Replace with your repo
+    const apiUrl = 'https://api.github.com/repos/JesseHoekema/DesktopFloppa/releases/latest';  
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
@@ -40,7 +40,6 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
         releaseLink.textContent = 'View Release';
         releaseLink.target = '_blank';
 
-        // Append the release information to the page
         releaseContainer.appendChild(releaseTitle);
         releaseContainer.appendChild(releaseDesc);
         releaseContainer.appendChild(releaseLink);
@@ -50,14 +49,14 @@ Your All New Floppa Pet On Your Screen! Based On The Idea Of Desktop Goose But N
 </script>
 
 <div id="latest-release">
-  <!-- Latest release info will be inserted here -->
+  
 </div>
 
 ### Release History
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'https://api.github.com/repos/JesseHoekema/DesktopFloppa/releases';  // Replace with your repo
+    const apiUrl = 'https://api.github.com/repos/JesseHoekema/DesktopFloppa/releases';  
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
